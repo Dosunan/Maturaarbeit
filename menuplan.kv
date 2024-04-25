@@ -1,0 +1,837 @@
+WindowManager:
+    FirstWindow:
+    MondayWindow:
+    TuesdayWindow:
+    WednesdayWindow:
+    ThursdayWindow:
+    FridayWindow:
+    SaturdayWindow:
+    SundayWindow:
+
+<FirstWindow>:
+    name: "first"
+
+    FloatLayout:
+             
+        Label:
+            text: "Menuplan"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+
+    
+        Button:
+            id: ButtonMonday
+            text: "Montag"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Monday"
+        Button:
+            id: ButtonTuesday
+            text: "Dienstag"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Tuesday"
+        Button:
+            id: ButtonWednesday
+            text: "Mittwoch"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Wednesday"
+        Button:
+            id: ButtonThursday
+            text: "Donnerstag"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Thursday"
+        Button:
+            id: ButtonFriday
+            text: "Freitag"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Friday"
+        Button:
+            id: ButtonSaturday
+            text: "Samstag"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Saturday"
+        Button:
+            id: ButtonSunday
+            text: "Sonntag"
+            font_size: 14
+            color: 0.42, 0.75, 0.77
+            size_hint: (0.12, 0.05)
+            pos_hint: {'y': 0.5}
+            background_color: 0.45,1,0.73
+            font_name: "Comic" 
+            on_release: app.root.current = "Sunday"
+       
+
+<MondayWindow>:
+    name: "Monday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+        
+    FloatLayout:
+        Label:
+            text: "Monday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            on_touch_down: text: "-"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+    
+    
+        
+ 
+
+
+
+<TuesdayWindow>:
+    name: "Tuesday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}        
+        
+    FloatLayout:
+        Label:
+            text: "Tuesday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+
+<WednesdayWindow>:
+    name: "Wednesday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}        
+        
+    FloatLayout:
+        Label:
+            text: "Wednesday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+
+<ThursdayWindow>:
+    name: "Thursday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}        
+        
+    FloatLayout:
+        Label:
+            text: "Thursday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+
+<FridayWindow>:
+    name: "Friday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+        
+    FloatLayout:
+        Label:
+            text: "Friday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+
+<SaturdayWindow>:
+    name: "Saturday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}        
+        
+    FloatLayout:
+        Label:
+            text: "Saturday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+
+<SundayWindow>:
+    name: "Sunday"
+
+    FloatLayout:
+        orientation: "horizontal"
+        size: root.width, root.height
+
+        Button:
+            text: "Go Back"
+            font_size: 20
+            on_release: app.root.current = "first"
+            size_hint: .15, .075
+            pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+        
+    FloatLayout:
+        Label:
+            text: "Sunday"
+            font_size: 64
+            color: 0.87, 0.49, 0
+            size_hint: 1,.5
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.15}
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label:
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        pos_hint:{'y':.5}
+
+        TextInput:
+            id: Montag_Fruehstück_Input
+            text: "Geben Sie ihr Frühstück ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Mittagessen_Input
+            text: "Geben Sie ihr Mittagessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+        TextInput:
+            id: Montag_Abendessen_Input
+            text: "Geben Sie ihr Abendessen ein"
+            size_hint_x: .1
+            size_hint_y: .05
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+    
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        spacing: 2
+        size_hint_y: '1.3'
+        Label:
+            text: "Frühstück"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Mittagessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
+        Label
+            text: "Abendessen"
+            color: 0.87, 0.49, 0
+            background_color: (1, 1, 1, 1)     
+            font_name: "Comic"
