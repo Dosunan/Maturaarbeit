@@ -30,72 +30,72 @@ WindowManager:
     
         Button:
             id: ButtonMonday
-            text: "Montag"
+            text: "Monday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Monday"
         Button:
             id: ButtonTuesday
-            text: "Dienstag"
+            text: "Tuesday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Tuesday"
         Button:
             id: ButtonWednesday
-            text: "Mittwoch"
+            text: "Wednesday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Wednesday"
         Button:
             id: ButtonThursday
-            text: "Donnerstag"
+            text: "Thursday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Thursday"
         Button:
             id: ButtonFriday
-            text: "Freitag"
+            text: "Friday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Friday"
         Button:
             id: ButtonSaturday
-            text: "Samstag"
+            text: "Saturday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Saturday"
         Button:
             id: ButtonSunday
-            text: "Sonntag"
+            text: "Sunday"
             font_size: 14
-            color: 0.42, 0.75, 0.77
+            color: 0.203, 0.572, 0.69
             size_hint: (0.12, 0.05)
             pos_hint: {'y': 0.5}
-            background_color: 0.45,1,0.73
+            background_color: 0.203, 0.572, 1
             font_name: "Comic" 
             on_release: app.root.current = "Sunday"
        
@@ -131,17 +131,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -153,21 +153,23 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Monday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
-            on_touch_down: text: "-"
+            font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Monday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
+            font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Monday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
+            font_name: "Comic"
     
     
         
@@ -205,17 +207,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -227,20 +229,20 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Tuesday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Tuesday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Tuesday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
@@ -252,17 +254,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -296,17 +298,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -318,20 +320,20 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Wednesday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Wednesday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Wednesday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
@@ -343,17 +345,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -365,17 +367,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -410,17 +412,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -432,20 +434,20 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Thursday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Thursday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Thursday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
@@ -457,17 +459,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -479,17 +481,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -524,17 +526,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -546,20 +548,20 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Friday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Friday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Friday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
@@ -571,17 +573,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -593,17 +595,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -638,17 +640,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -660,20 +662,20 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Saturday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Saturday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Saturday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
@@ -685,17 +687,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -707,17 +709,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -752,17 +754,17 @@ WindowManager:
         spacing: 2
         pos_hint:{'y':.15}
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label:
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -774,20 +776,20 @@ WindowManager:
         pos_hint:{'y':.5}
 
         TextInput:
-            id: Montag_Fruehstück_Input
-            text: "Geben Sie ihr Frühstück ein"
+            id: Sunday_Breakfast_Input
+            text: "Type in your breakfast"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Mittagessen_Input
-            text: "Geben Sie ihr Mittagessen ein"
+            id: Sunday_Lunch_Input
+            text: "Type in your lunch"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
         TextInput:
-            id: Montag_Abendessen_Input
-            text: "Geben Sie ihr Abendessen ein"
+            id: Sunday_Dinner_Input
+            text: "Type in your dinner"
             size_hint_x: .1
             size_hint_y: .05
             font_name: "Comic"
@@ -799,17 +801,17 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
@@ -821,17 +823,35 @@ WindowManager:
         spacing: 2
         size_hint_y: '1.3'
         Label:
-            text: "Frühstück"
+            text: "Breakfast"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Mittagessen"
+            text: "Lunch"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
         Label
-            text: "Abendessen"
+            text: "Dinner"
             color: 0.87, 0.49, 0
             background_color: (1, 1, 1, 1)     
             font_name: "Comic"
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+            
+ 
+
+    
+
+
+
+
